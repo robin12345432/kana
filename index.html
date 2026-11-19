@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="de" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#15120f" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Kana" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="./icons/icon-192.png" />
+    <title>Kana</title>
+    <script>
+      // Farbschema vor dem ersten Zeichnen setzen (kein Aufblitzen). Quelle der Wahrheit bleibt IndexedDB.
+      try {
+        if (localStorage.getItem('kana-theme') === 'light') document.documentElement.dataset.theme = 'light';
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/index-Bj4omKVE.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/error-DwLpsZPe.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-BR1cov6i.css">
+  <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
